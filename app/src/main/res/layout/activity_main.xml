@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.lm.costomtextcolor03.MainActivity">
+
+    <com.lm.costomtextcolor03.ColorTrackTextView
+        android:id="@+id/colorTrackView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        app:changeColor="@color/colorAccent"
+        app:originColor="@color/colorPrimaryDark"
+        android:text="hellow World" />
+    <Button
+        android:id="@+id/left_to_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="leftToRright"
+        android:text="从左到右"/>
+    <Button
+        android:id="@+id/right_to_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="rightToLeft"
+        android:text="从右到左"/>
+</LinearLayout>
